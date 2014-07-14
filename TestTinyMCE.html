@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><!-- CDN hosted by Cachefly -->
+        <title>Test TinyMCE and js-beautify</title>
+        <script type="text/javascript" src="/TinyMCE/js-beautify-master/js/lib/beautify-html.js"></script>
+        <script type="text/javascript" src="/TinyMCE/js/tinymce/tinymce.min.js"></script>
+
+        <script type="text/javascript" >
+            tinymce.init({
+            selector: "div.edit",
+            theme: "modern",
+            plugins: [
+                ["advlist autolink link image lists charmap preview hr anchor pagebreak spellchecker"],
+                ["searchreplace wordcount visualblocks visualchars fullscreen insertdatetime media nonbreaking"],
+                ["table contextmenu directionality emoticons template paste"]
+            ],
+            external_plugins: {
+                "codebeautify": "/TinyMCE/js-beautify-master/TinyMCEplugin/plugin.js"
+            },
+            menubar: "edit insert view format table tools",
+            add_unload_trigger: false,
+            schema: "html5",
+            inline: false,
+            toolbar: "undo redo | styleselect | bold italic | table | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image     | preview media | codebeautify",
+            statusbar: true
+        });
+        </script>
+    </head>
+    <body>
+        <div class="edit">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Some</td>
+                        <td>Text</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
