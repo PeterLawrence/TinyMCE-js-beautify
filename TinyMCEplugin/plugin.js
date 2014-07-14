@@ -3,10 +3,10 @@
 // P.J.Lawrence July 2014
 //
 // (1) add to web page script link to beautify-html.js, for example
-//      <script src="/<path to>/js-beautify-master/js/beautify-html.js"></script>
+//      <script src="/<path to>/TinyMCE-js-beautify/js/beautify-html.js"></script>
 // (2) add external plugin to tinymce.init code block, for example
 //      external_plugins: {
-//          "codebeautify": "/<path to>/js-beautify-master/TinyMCEplugin/plugin.js"
+//          "codebeautify": "/<path to>/TinyMCE-js-beautify/TinyMCEplugin/plugin.js"
 //      },
 // (3) optionaly add to tool bar, for example
 //      toolbar: "codebeautify"

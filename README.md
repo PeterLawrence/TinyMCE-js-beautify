@@ -11,12 +11,12 @@ Installation
 1. Copy the plugin directory into for example your TinyMCE folder.
 2. add to web page script link to beautify-html.js, for example
 ```html
-      <script src="/<path to>/js-beautify-master/js/beautify-html.js"></script>
+      <script src="/<path to>/TinyMCE-js-beautify/js/beautify-html.js"></script>
 ```
 3. add external plugin to tinymce.init code block, for example
 ```javascript
       external_plugins: {
-          "codebeautify": "/<path to>/js-beautify-master/TinyMCEplugin/plugin.js"
+          "codebeautify": "/<path to>/TinyMCE-js-beautify/TinyMCEplugin/plugin.js"
    },
 ```
 4. optionaly add to tool bar, for example
@@ -27,9 +27,9 @@ Installation
 Usage
 -----
 
-To test the installation open the TestTinyMCE.html found in the js-beautify-master folder.
+To test the installation open the TestTinyMCE.html found in the TinyMCE-js-beautify folder.
 Note you might need to update the Javascript paths at the being of this html file. 
-Default installation location is /TinyMCE/js-beautify-master
+Default installation location is /TinyMCE/TinyMCE-js-beautify
 
 Note
 ----
